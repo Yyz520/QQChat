@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<Group xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hbuas.chat.control.HeadControl">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <GridPane fx:id="gridpane" prefHeight="402.0" prefWidth="400.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="image1" userData="images/100.gif" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/100.gif" />
+                     </image></ImageView>
+                   <ImageView fx:id="image2" userData="images/102.gif" fitHeight="131.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                       <image>
+                           <Image url="@/images/102.gif" />
+                       </image></ImageView>
+                   <ImageView fx:id="image3" userData="images/120.gif" fitHeight="126.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                       <image>
+                           <Image url="@/images/120.gif" />
+                       </image></ImageView>
+                  <ImageView fx:id="image4" userData="images/111.gif" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@/images/111.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image5" userData="images/113.gif" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@/images/113.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image6" userData="images/120.gif" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@/images/122.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image7" userData="images/118.gif" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@/images/118.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image8" userData="images/130.gif" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@/images/130.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image9" userData="images/135.gif" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@/images/135.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

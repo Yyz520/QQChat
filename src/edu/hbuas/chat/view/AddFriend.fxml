@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+<Group xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hbuas.chat.control.AddFriendControl">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="27.0" layoutY="52.0" text="请输入用户名">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputUsername" layoutX="132.0" layoutY="51.0" />
+            <Label layoutX="27.0" layoutY="102.0" prefHeight="20.0" prefWidth="79.0" text="请选择分组">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choiceBox" layoutX="132.0" layoutY="101.0" prefHeight="23.0" prefWidth="161.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="家人" />
+                        <String fx:value="朋友" />
+                        <String fx:value="同学" />
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+            <Button fx:id="addButton" layoutX="96.0" layoutY="145.0" mnemonicParsing="false" onAction="#processAddFriend" prefHeight="41.0" prefWidth="108.0" text="确认添加">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</Group>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<Group xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.hbuas.chat.control.MainControl">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="300.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="300.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@/images/default.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="92.0" prefWidth="202.0">
+                           <children>
+                              <Label fx:id="nickname" prefHeight="33.0" prefWidth="169.0" text="昵称" textAlignment="CENTER">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="signature" prefHeight="46.0" prefWidth="191.0" text="个性签名显示区域" wrapText="true">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="743.0" prefWidth="300.0">
+                     <children>
+                        <TreeView fx:id="tree" layoutY="-2.0" onMouseClicked="#chooseFriend" prefHeight="470.0" prefWidth="301.0" />
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="41.0" prefWidth="300.0">
+                     <children>
+                        <Button fx:id="addButton" mnemonicParsing="false" onAction="#addFriend" prefHeight="39.0" prefWidth="100.0" text="添加好友">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#chatWithAll" prefHeight="40.0" prefWidth="100.0" text="开始群聊">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#refresh" prefHeight="41.0" prefWidth="100.0" text="刷新">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </children>
+</Group>
